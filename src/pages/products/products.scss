@@ -1,3 +1,88 @@
 .products {
-  background-color: red;
+  width: 85vw;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    .upper {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        width: 60%;
+        display: flex;
+        justify-content: end;
+        .prodSearch {
+          width: 60%;
+          border-radius: 40px;
+          border: 1px solid #3c91e5;
+          background-color: rgba(123, 188, 254, 0.2);
+        }
+      }
+      .right {
+        width: 21%;
+        .addCateg {
+          padding: 10px;
+          margin: 0 2em 0 0;
+          background-color: #7bbcfe;
+          border: none;
+          border-radius: 4px;
+        }
+        .addProd {
+          background-color: #2792fd;
+          border-radius: 4px;
+          padding: 10px;
+          border: none;
+        }
+      }
+    }
+    .lower {
+      .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .card {
+          margin: 10px;
+          width: 200px;
+          height: 200px;
+          border: 3px solid rgba(123, 188, 254, 0.2);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05),
+            0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+          .top {
+            margin: 5px;
+          }
+          .cardHeader {
+            text-align: center;
+          }
+          .details {
+            line-height: 25px;
+          }
+          .bottom {
+            .btns {
+              display: flex;
+              width: 100%;
+              height: 45px;
+
+              .edit {
+                width: 50%;
+                height: 100%;
+                background-color: #7bbcfe;
+                cursor: pointer;
+                border: none;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+              }
+              .delete {
+                cursor: pointer;
+                height: 100%;
+                width: 50%;
+                border: none;
+                background-color: #da3832;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

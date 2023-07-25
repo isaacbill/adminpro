@@ -109,6 +109,81 @@ export const menu = [
   // },
 ];
 
+export const newProducts = [
+  {
+    id: 1,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 2,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 3,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 4,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 5,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 6,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 7,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 8,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+  {
+    id: 9,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
+];
+
 export const topDealUsers = [
   {
     id: 1,
