@@ -182,6 +182,14 @@ export const newProducts = [
     description:
       "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
   },
+  {
+    id: 10,
+    title: "BMW",
+    price: "ksh 200",
+    quantity: 30,
+    description:
+      "Descritpion: Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+  },
 ];
 
 export const topDealUsers = [

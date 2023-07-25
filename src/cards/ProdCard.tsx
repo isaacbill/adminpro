@@ -1,6 +1,11 @@
 import { newProducts } from "../data";
 import "../pages/products/products.scss";
 
+type Props = {
+  slug: string;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
 const ProdCard = () => {
   return (
     <>
