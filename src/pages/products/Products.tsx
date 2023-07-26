@@ -64,9 +64,15 @@ const Products = () => {
           </div>
         </div>
       </div>
-      {open && <Add slug="product" columns={columns} setOpen={setOpen} />}
+      {open && (
+        <Add slug=" Add new product" columns={columns} setOpen={setOpen} />
+      )}
       {categOpen && (
-        <Add slug="category" columns={categColumns} setOpen={setCategOpen} />
+        <Add
+          slug="Add new category"
+          columns={categColumns}
+          setOpen={setCategOpen}
+        />
       )}
     </div>
   );

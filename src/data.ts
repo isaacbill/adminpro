@@ -32,6 +32,24 @@ export const menu = [
         title: "Category",
         url: "/categories",
         icon: "product.svg",
+        categs: [
+          {
+            id: 2,
+            title: "category 1",
+          },
+          {
+            id: 2,
+            title: "category 2",
+          },
+          {
+            id: 2,
+            title: "category 3",
+          },
+          {
+            id: 2,
+            title: "category 4",
+          },
+        ],
       },
       {
         id: 3,

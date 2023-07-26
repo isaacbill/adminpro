@@ -1,12 +1,41 @@
+import { useState } from "react";
 import { newProducts } from "../data";
 import "../pages/products/products.scss";
+import { GridColDef } from "@mui/x-data-grid";
+import Add from "../components/add/Add";
+import Delete from "../components/delete/Delete";
 
-type Props = {
-  slug: string;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
+const columns: GridColDef[] = [
+  {
+    field: "name",
+    type: "string",
+    headerName: "Name",
+    width: 250,
+  },
+  {
+    field: "price",
+    type: "number",
+    headerName: "Price",
+    width: 250,
+  },
+  {
+    field: "quantity",
+    headerName: "Quantity",
+    type: "string",
+    width: 250,
+  },
+  {
+    field: "descritption",
+    headerName: "Description",
+    type: "string",
+    width: 250,
+  },
+];
 
 const ProdCard = () => {
+  const [open, setOpen] = useState(false);
+  const [deleteOpen, setDeleteOpen] = useState(false);
+
   return (
     <>
       <div className="cardContainer">
@@ -24,13 +53,30 @@ const ProdCard = () => {
             </div>
             <div className="bottom">
               <div className="btns">
-                <button className="edit">Edit</button>
-                <button className="delete">Delete</button>
+                <button onClick={() => setOpen(true)} className="edit">
+                  Edit
+                </button>
+                <button
+                  onClick={() => setDeleteOpen(true)}
+                  className="deleteBtn"
+                >
+                  Delete
+                </button>
               </div>
             </div>
           </div>
         ))}
+        {open && (
+          <Add slug="Update Product" columns={columns} setOpen={setOpen} />
+        )}
       </div>
+      {deleteOpen && (
+        <Delete
+          slug="delete product"
+          columns={columns}
+          setDeleteOpen={setDeleteOpen}
+        />
+      )}
     </>
   );
 };

@@ -1,0 +1,99 @@
+// @import "../../styles/variables.scss";
+
+.delete {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.724);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 24px;
+      color: #7bbcfe;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    .delDialog {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 500px;
+      justify-content: space-between;
+
+      .delItem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        label {
+          font-size: 14px;
+        }
+
+        input {
+          padding: 10px;
+          background-color: rgba(123, 188, 254, 0.2);
+          color: black;
+          outline: none;
+          border: 1px solid #7bbcfe;
+          border-radius: 3px;
+        }
+      }
+
+      button {
+        width: 40%;
+        padding: 10px;
+        margin: auto;
+        cursor: pointer;
+        border: none;
+        color: white;
+        background-color: #3c91e5;
+      }
+    }
+    .delDialogBtn {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+      .dialogCancelBtns {
+        width: 20%;
+        padding: 10px;
+        background-color: #da3832;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        margin: 5px;
+        color: white;
+      }
+      .dialogOkBtns {
+        width: 20%;
+        padding: 10px;
+        background-color: #7bbcfe;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        margin: 5px;
+      }
+    }
+  }
+}
