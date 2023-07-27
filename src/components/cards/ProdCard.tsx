@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { newProducts } from "../data";
-import "../pages/products/products.scss";
+import { newProducts } from "../../data";
+import "../../pages/products/products.scss";
 import { GridColDef } from "@mui/x-data-grid";
-import Add from "../components/add/Add";
-import Delete from "../components/delete/Delete";
+import Add from "../add/Add";
+import Delete from "../delete/Delete";
 
 const columns: GridColDef[] = [
   {
