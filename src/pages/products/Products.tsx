@@ -1,4 +1,4 @@
-import ProdCard from "../../cards/ProdCard";
+import ProdCard from "../../components/cards/ProdCard";
 import { useState } from "react";
 import "./products.scss";
 import { GridColDef } from "@mui/x-data-grid";

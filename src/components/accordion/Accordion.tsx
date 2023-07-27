@@ -1,16 +1,17 @@
 import { Accordion } from "react-bootstrap";
-type Props = {
-  list: string;
-};
-const AccordionComponent = (props: Props) => {
+
+const AccordionComponent = (props) => {
   return (
-    // {props.list.map(item)}
-    <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>Lorem ipsum</Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+    <>
+      {props.categories.map((item) => (
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey={item.id}>
+            <Accordion.Header>{item.title}</Accordion.Header>
+            <Accordion.Body>{item.desc}</Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      ))}
+    </>
   );
 };
 

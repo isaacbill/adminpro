@@ -1,7 +1,6 @@
 export const menu = [
   {
     id: 1,
-    // title: "main",
     listItems: [
       {
         id: 1,
@@ -9,20 +8,8 @@ export const menu = [
         url: "/",
         icon: "home.svg",
       },
-      // {
-      //   id: 2,
-      //   title: "Profile",
-      //   url: "/users/1",
-      //   icon: "user.svg",
-      // },
-    ],
-  },
-  {
-    id: 2,
-    title: "",
-    listItems: [
       {
-        id: 1,
+        id: 2,
         title: "Products",
         url: "/products",
         icon: "product.svg",
@@ -34,20 +21,20 @@ export const menu = [
         icon: "product.svg",
         categs: [
           {
-            id: 2,
-            title: "category 1",
+            id: 1,
+            title: "car",
+            desc: "categ 1 desc",
           },
           {
             id: 2,
-            title: "category 2",
+
+            title: "Electronics",
+            desc: "categ 2 desc",
           },
           {
-            id: 2,
-            title: "category 3",
-          },
-          {
-            id: 2,
-            title: "category 4",
+            id: 3,
+            title: "Unga",
+            desc: "categ 3 desc",
           },
         ],
       },
