@@ -9,32 +9,36 @@ const Menu = () => {
       <div className="menu">
         {menu.map((item) => (
           <div className="item" key={item.id}>
-            {/* <span className="title">{item.title}</span> */}
             {item.listItems.map((listItem) => {
-              // if listitem is not category
-
               // if listitem is category
+              if (listItem.title === "Category") {
+                return (
+                  <div>
+                    <AccordionComponent
+                      title="Category"
+                      icon={listItem.icon}
+                      categories={listItem.categs}
+                    />
+                  </div>
+                );
+              } else {
+                // if listitem is not category
+                return (
+                  <div>
+                    <Link
+                      to={listItem.url}
+                      className="listItem"
+                      key={listItem.id}
+                    >
+                      <div className="top">
+                        <img src={listItem.icon} alt="" />
 
-              return (
-                <div>
-                  <Link
-                    to={listItem.url}
-                    className="listItem"
-                    key={listItem.id}
-                  >
-                    <div className="top">
-                      <img src={listItem.icon} alt="" />
-
-                      <span className="listItemTitle">{listItem.title}</span>
-                    </div>
-                  </Link>
-                  {listItem.categs && (
-                    <div className="accordionContainer">
-                      <AccordionComponent categories={listItem.categs} />
-                    </div>
-                  )}
-                </div>
-              );
+                        <span className="listItemTitle">{listItem.title}</span>
+                      </div>
+                    </Link>
+                  </div>
+                );
+              }
             })}
           </div>
         ))}

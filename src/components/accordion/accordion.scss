@@ -1,0 +1,46 @@
+// .acccordion {
+//   .top2 {
+//     display: flex;
+//     width: 100%;
+//     flex-direction: column;
+//     button {
+//       width: 100%;
+//       display: flex;
+//       border: none;
+//       padding: 10px;
+//       background: none;
+//     }
+//   }
+// }
+.accordion {
+  padding: 10px 0;
+  &:hover {
+    background-color: #3c91e5;
+  }
+  .accordion-content {
+    background-color: #3c91e5;
+    .list-item {
+      padding: 0 0 10px 0;
+    }
+  }
+  .accordion-item {
+    padding: 0 0 0 10px;
+
+    .accordion-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      .left {
+        display: flex;
+      }
+      .plus-icon {
+        margin: 0 20px 0 0;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
