@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Menu from "./components/menu/Menu";
 import "./styles/global.scss";
 import Navbar from "./components/navbar/Navbar";
+import PageLoader from "./components/pageloader/PageLoader";
 
 const Home = lazy(() => {
   return new Promise((resolve) => {
@@ -94,7 +95,7 @@ function App() {
   ]);
   return (
     <>
-      <Suspense fallback={<div>loading.....</div>}>
+      <Suspense fallback={<PageLoader />}>
         <RouterProvider router={router} />
       </Suspense>
     </>

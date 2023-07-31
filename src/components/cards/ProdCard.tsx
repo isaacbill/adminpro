@@ -46,9 +46,7 @@ const ProdCard = () => {
               <div className="details">
                 <div className="price">Price: {item.price}</div>
                 <div className="quantity"> Quantity: {item.quantity}</div>
-                <div className="description">
-                  Descritpion: {item.description}
-                </div>
+                <div className="description">{item.description}</div>
               </div>
             </div>
             <div className="bottom">
