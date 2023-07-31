@@ -38,12 +38,6 @@ export const menu = [
           },
         ],
       },
-      // {
-      //   id: 3,
-      //   title: "subcategory",
-      //   url: "/subcategories",
-      //   icon: "order.svg",
-      // },
     ],
   },
   // {

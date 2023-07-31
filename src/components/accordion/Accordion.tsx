@@ -36,7 +36,7 @@ const AccordionComponent = (props) => {
                 listStyleType: "none",
               }}
             >
-              <Link to="/">
+              <Link to={`/subcategories/${categs.title}`}>
                 <li
                   style={{
                     padding: "5px 0 15px 0",

@@ -13,9 +13,32 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Menu from "./components/menu/Menu";
 import "./styles/global.scss";
 import Navbar from "./components/navbar/Navbar";
+import { menu } from "./data";
 
 const queryClient = new QueryClient();
 function App() {
+  // const subCategs = [
+  //   {
+  //     id: 1,
+  //     title: "car",
+  //     desc: "categ 1 desc",
+  //   },
+  //   {
+  //     id: 2,
+
+  //     title: "Electronics",
+  //     desc: "categ 2 desc",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Unga",
+  //     desc: "categ 3 desc",
+  //   },
+  // ];
+  // const categs = subCategs.map((subCateg) => {
+  //   return subCateg;
+  // });
+
   const Layout = () => {
     return (
       <div className="main">
@@ -52,7 +75,7 @@ function App() {
           element: <Products />,
         },
         {
-          path: "/subcategories",
+          path: "/subcategories/:subCategs",
           element: <SubCategory />,
         },
       ],
