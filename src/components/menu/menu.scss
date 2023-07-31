@@ -4,8 +4,10 @@
 .menu {
   background-color: #7bbcfe;
   color: black;
-  height: 100vh;
+  height: calc(100vh - 81px);
   width: 15vw;
+  position: sticky;
+  top: 70px;
   .item {
     display: flex;
     flex-direction: column;

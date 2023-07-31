@@ -10,4 +10,7 @@ a {
 }
 .container {
   display: flex;
+  .contentContainer {
+    width: 85vw;
+  }
 }

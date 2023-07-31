@@ -1,5 +1,5 @@
 import ProdCard from "../../components/cards/ProdCard";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import "./products.scss";
 import { GridColDef } from "@mui/x-data-grid";
 import Add from "../../components/add/Add";
