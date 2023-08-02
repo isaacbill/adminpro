@@ -1,7 +1,9 @@
+import { useParams } from "react-router-dom";
 import "./subCategory.scss";
 
 const SubCategory = () => {
-  return <div className="subCategory">SubCategory</div>;
+  const { subCategs } = useParams();
+  return <div className="subCategory">{subCategs}</div>;
 };
 
 export default SubCategory;

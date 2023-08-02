@@ -8,6 +8,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.container {
-  display: flex;
+.main {
+  .container {
+    display: flex;
+    .contentContainer {
+      width: 85vw;
+    }
+  }
 }
